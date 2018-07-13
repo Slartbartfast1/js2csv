@@ -1,6 +1,6 @@
 {
   "name": "js2csv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert or render JSON to CSV",
   "keywords": [
     "CSV"
