@@ -1,22 +1,26 @@
 {
   "name": "js2csv",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Convert or render JSON to CSV",
-  "keywords": [
-    "CSV"
-  ],
-  "author": "jiaxincui <jenkincei@hotmail.com>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jiaxincui/js2csv.git"
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "csv"
   ],
   "author": "jiaxincui",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiaxincui/js2csv.git"
+  },
+  "main": "dist/js/js2csv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src/js2csv.js --out-file dist/js/js2csv.js",
+    "prepublish": "npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
 }
